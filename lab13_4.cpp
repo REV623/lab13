@@ -1,6 +1,9 @@
 #include<iostream>
-
+#include<string>
 using namespace std;
+
+template<class t>
+void mySwap(t &,t &);
 
 int main(){
 	int x, y;
@@ -30,3 +33,9 @@ int main(){
 	return 0;
 }
 
+template<class t>
+void mySwap(t &A,t &B){
+	t temp = A;
+	A = B;
+	B = temp;
+}
